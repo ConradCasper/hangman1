@@ -1,14 +1,18 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 500px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hangman hangman hangman"
+    "winRecord theDude letterDisplay"
+    "answersWrong theDude letterDisplay"
+    ". characters .";
 }
 
 div:nth-child(odd){
-background-color: green;
+background-color:lightblue;
 }
 div:nth-child(even){
-    background-color:red;
+    background-color: lightcoral;
 }
 
 .hangman {
