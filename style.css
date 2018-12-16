@@ -10,3 +10,27 @@ background-color: green;
 div:nth-child(even){
     background-color:red;
 }
+
+.hangman {
+    grid-area: hangman;
+}
+
+.theDude {
+    grid-area: theDude;
+}
+
+.winRecord {
+    grid-area: winRecord;
+}
+
+.answerswrong {
+    grid-area: answersWrong;
+}
+
+.letterDisplay {
+    grid-area: letterDisplay;
+}
+
+.characters {
+    grid-area: characters;
+}
