@@ -17,22 +17,31 @@ div:nth-child(even){
 
 .hangman {
     grid-area: hangman;
+    justify-self: center;
 }
 
 .theDude {
     grid-area: theDude;
+    justify-self: center;
 }
 
 .winRecord {
     grid-area: winRecord;
+    justify-self: center;
 }
 
 .answerswrong {
     grid-area: answersWrong;
+    justify-self: center;
 }
 
 .letterDisplay {
     grid-area: letterDisplay;
+    justify-self: center;
+}
+
+.buttonContainer {
+    justify-self: center;
 }
 
 .characters {
