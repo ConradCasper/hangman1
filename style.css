@@ -3,8 +3,9 @@
     grid-template-columns: 1fr 500px 1fr;
     grid-template-areas: 
     "hangman hangman hangman"
-    "winRecord theDude letterDisplay"
-    "answersWrong theDude letterDisplay"
+    "winRecord theDude ."
+    "answersWrong theDude ."
+    ". letterDisplay ."
     ". characters .";
 }
 
@@ -16,12 +17,6 @@ h1 {
     font-family: 'Alfa Slab One', cursive;
 }
 
-div:nth-child(odd){
-background-color:lightblue;
-}
-div:nth-child(even){
-    background-color: lightcoral;
-}
 
 .hangman {
     grid-area: hangman;
