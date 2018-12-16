@@ -21,6 +21,7 @@ h1 {
 .hangman {
     grid-area: hangman;
     justify-self: center;
+    padding-top: 5em;
 }
 
 .theDude {
@@ -38,8 +39,15 @@ h1 {
     justify-self: center;
 }
 
-.letterDisplay {
+.letterDisplayContainer {
+    width: 500px;
+    height: 200px;
     grid-area: letterDisplay;
+    justify-self: center;
+    padding-bottom: 3em;
+}
+
+.letterDisplay {
     justify-self: center;
 }
 
