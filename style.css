@@ -8,6 +8,10 @@
     ". characters .";
 }
 
+img {
+    width: 500px;
+}
+
 div:nth-child(odd){
 background-color:lightblue;
 }
