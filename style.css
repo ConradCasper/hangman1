@@ -12,6 +12,10 @@ img {
     width: 500px;
 }
 
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
 div:nth-child(odd){
 background-color:lightblue;
 }
