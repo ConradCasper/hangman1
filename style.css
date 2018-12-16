@@ -30,7 +30,7 @@ div:nth-child(even){
     justify-self: center;
 }
 
-.answerswrong {
+.answersWrong {
     grid-area: answersWrong;
     justify-self: center;
 }
@@ -42,11 +42,18 @@ div:nth-child(even){
 
 .buttonContainer {
     justify-self: center;
+    display: table;
+    width: 400px;
 }
 
 .characters {
     grid-area: characters;
+    justify-self: center;
 }
+button {
+width: 4em;
+}
+
 .A {
     display: inline;
 }
