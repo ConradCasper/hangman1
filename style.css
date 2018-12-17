@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 500px 1fr;
     grid-template-areas: 
     "hangman hangman hangman"
-    "winRecord theDude ."
+    "answersWrong theDude ."
     "answersWrong theDude ."
     ". letterDisplay ."
     ". characters .";

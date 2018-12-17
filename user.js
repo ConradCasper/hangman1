@@ -5,4 +5,6 @@ $('.letter').on('click', function () {
     let letterValue = $(this).html();
     console.log(letterValue);})
 
+    const newGame = function(){
     
+    }
