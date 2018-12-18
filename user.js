@@ -6,31 +6,31 @@ $('.hangmen').ready().hide()
 // from joseph kim
 $('.letter').on('click', function () {
     let letterValue = $(this).html()
-    
+
     console.log(letterValue)
     var str = "CONRAD"
-  var n = str.indexOf(letterValue);
-  console.log(n)
-  if (n >= 0){
-     letterMemory[n] = letterValue
-     $('#letterDisplay').html(letterMemory)
-// andrew helped me with this part, it toggles the hidden imgs to visable and the previous image to invisible
-  } if (n < 0) {
-      $('#' + wrongCount + '').hide()
+    var n = str.indexOf(letterValue);
+    console.log(n)
+    if (n >= 0) {
+        letterMemory[n] = letterValue
+        $('#letterDisplay').html(letterMemory)
+        // andrew helped me with this part, it toggles the hidden imgs to visable and the previous image to invisible
+    } if (n < 0) {
+        $('#' + wrongCount + '').hide()
         wrongCount += 1
-     $('#' + wrongCount + '').toggle() 
+        $('#' + wrongCount + '').toggle()
 
-     
-  }if (wrongCount == 6){
-      swal("You LOSE :(")
-      
-  }if (n >= 0) {
-      rightCount += 1
-  }if (rightCount == 6){
-      swal("You WIN!!")
-      
-  }
-  
+
+    } if (wrongCount == 6) {
+        swal("You LOSE :(")
+
+    } if (n >= 0) {
+        rightCount += 1
+    } if (rightCount == 6) {
+        swal("You WIN!!")
+
+    }
+
 })
 
 
