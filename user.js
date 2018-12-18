@@ -12,12 +12,18 @@ $('.letter').on('click', function () {
   if (n >= 0){
      letterMemory[n] = letterValue
      $('#letterDisplay').html(letterMemory)
-
+// andrew helped me with this part, it toggles the hidden imgs to visable and the previous image to invisible
   } if (n < 0) {
-     wrongCount += 1;
+      $('#' + wrongCount + '').hide()
+        wrongCount += 1
+     $('#' + wrongCount + '').toggle() 
+
+     
+  }if (wrongCount == 6){
+      alert("You LOSE")
   }
 
-  console.log(wrongCount)
+  
 })
 
 
