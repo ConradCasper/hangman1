@@ -1,5 +1,5 @@
-let letterMemory = []
-
+let letterMemory = ["_","_","_","_","_","_"]
+let wrongCount = 0
 
 
 // from joseph kim
@@ -10,7 +10,9 @@ $('.letter').on('click', function () {
   var n = str.indexOf(letterValue);
   console.log(n)
   if (n >= 0){
-     document.getElementById(letterMemory).innerHTML += letterValue
+     letterMemory[n] = letterValue
+  }else {
+     wrongCount += 1;
   }
 })
 
