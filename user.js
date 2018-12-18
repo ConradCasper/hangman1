@@ -11,9 +11,12 @@ $('.letter').on('click', function () {
   console.log(n)
   if (n >= 0){
      letterMemory[n] = letterValue
-  }else {
+     $('#letterDisplay').html(letterMemory)
+  } if (n < 0) {
      wrongCount += 1;
   }
+
+  console.log(wrongCount)
 })
 
 console.log(letterMemory)
