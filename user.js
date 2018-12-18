@@ -6,6 +6,7 @@ $('.hangmen').ready().hide()
 // from joseph kim
 $('.letter').on('click', function () {
     let letterValue = $(this).html()
+    
     console.log(letterValue)
     var str = "CONRAD"
   var n = str.indexOf(letterValue);
@@ -22,10 +23,12 @@ $('.letter').on('click', function () {
      
   }if (wrongCount == 6){
       swal("You LOSE :(")
+      
   }if (n >= 0) {
       rightCount += 1
   }if (rightCount == 6){
       swal("You WIN!!")
+      
   }
   
 })
