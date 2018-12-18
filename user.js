@@ -1,6 +1,6 @@
 let letterMemory = ["_","_","_","_","_","_"]
 let wrongCount = 0
-
+$('.hangmen').ready().hide()
 
 // from joseph kim
 $('.letter').on('click', function () {
