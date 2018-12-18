@@ -1,4 +1,5 @@
-let letterMemory = ["_","_","_","_","_","_"]
+let letterMemory = []
+let rightCount = 0
 let wrongCount = 0
 $('.hangmen').ready().hide()
 
@@ -20,11 +21,12 @@ $('.letter').on('click', function () {
 
      
   }if (wrongCount == 6){
-      swal("You LOSE")
-  }if (letterMemory.length == 6){
-      swal('You Win!')
+      swal("You LOSE :(")
+  }if (n >= 0) {
+      rightCount += 1
+  }if (rightCount == 6){
+      swal("You WIN!!")
   }
-
   
 })
 
