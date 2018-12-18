@@ -20,7 +20,9 @@ $('.letter').on('click', function () {
 
      
   }if (wrongCount == 6){
-      alert("You LOSE")
+      swal("You LOSE")
+  }if (letterMemory.length == 6){
+      swal('You Win!')
   }
 
   
